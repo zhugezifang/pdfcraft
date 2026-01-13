@@ -4,7 +4,7 @@
 export const siteConfig = {
   name: 'PDF24 Tools',
   description: 'Free Online PDF Tools - Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
-  url: 'https://pdfcraft.devtoolcafe.com',
+  url: 'https://pdf24tools.online',
   ogImage: '/images/og-image.png',
   links: {
     github: '#',
