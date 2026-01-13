@@ -2,8 +2,8 @@
  * Site configuration
  */
 export const siteConfig = {
-  name: 'PDFCraft',
-  description: 'Professional PDF Tools - Free, Private & Browser-Based. Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
+  name: 'PDF24 Tools',
+  description: 'Free Online PDF Tools - Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
   url: 'https://pdfcraft.devtoolcafe.com',
   ogImage: '/images/og-image.png',
   links: {
@@ -25,8 +25,8 @@ export const siteConfig = {
   ],
   // SEO-related settings
   seo: {
-    titleTemplate: '%s | PDFCraft',
-    defaultTitle: 'PDFCraft - Professional PDF Tools',
+    titleTemplate: '%s | PDF24 Tools',
+    defaultTitle: 'PDF24 Tools - Free Online PDF Tools',
     twitterHandle: '@pdfcraft',
     locale: 'en_US',
   },
