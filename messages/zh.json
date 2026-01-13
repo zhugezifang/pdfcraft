@@ -45,8 +45,8 @@
       "loading": "加载中..."
     },
     "footer": {
-      "footer": "© 2025 PDFCraft. 保留所有权利。",
-      "copyright": "© {year} PDFCraft. 保留所有权利。",
+      "footer": "© 2025 PDF24 Tools. 保留所有权利。",
+      "copyright": "© {year} PDF24 Tools. 保留所有权利。",
       "privacyBadge": "100% 私密 - 文件永不离开您的设备",
       "madeWith": "Made with <Heart /> and <Nextjs />"
     },
@@ -156,11 +156,11 @@
     "sections": {
       "general": {
         "whatIs": {
-          "question": "PDFCraft 是什么？",
-          "answer": "PDFCraft 是一个免费、注重隐私的 PDF 工具包，完全在您的浏览器中运行。它提供 67+ 个专业工具，用于编辑、转换、合并、分割和加密 PDF 文件，而无需将其上传到任何服务器。"
+          "question": "PDF24 是什么？",
+          "answer": "PDF24 是一个免费、注重隐私的 PDF 工具包，完全在您的浏览器中运行。它提供 67+ 个专业工具，用于编辑、转换、合并、分割和加密 PDF 文件，而无需将其上传到任何服务器。"
         },
         "isFree": {
-          "question": "PDFCraft 真的免费吗？",
+          "question": "PDF24 真的免费吗？",
           "answer": "是的，PDFCraft 完全免费使用。没有隐藏费用，没有高级会员，也无需注册。所有功能对每个人开放。"
         },
         "account": {
@@ -174,7 +174,7 @@
           "answer": "不会，您的文件从未上传到任何服务器。所有 PDF 处理都使用 JavaScript 和 WebAssembly 在浏览器本地进行。您的文件从未离开您的设备。"
         },
         "safe": {
-          "question": "使用 PDFCraft 处理敏感文档安全吗？",
+          "question": "使用 PDF24 处理敏感文档安全吗？",
           "answer": "是的，PDFCraft 的设计以隐私为重。由于所有处理都在浏览器本地进行，您的敏感文档保留在您的设备上，从未通过互联网传输。"
         },
         "storage": {
@@ -185,7 +185,7 @@
       "features": {
         "operations": {
           "question": "我可以执行哪些 PDF 操作？",
-          "answer": "PDFCraft 提供 67+ 个工具，包括：合并、分割、压缩、转换（转为/来自图像、文本、JSON）、编辑、注释、签名、添加水印、加密/解密、OCR 等等。"
+          "answer": "PDF24 提供 67+ 个工具，包括：合并、分割、压缩、转换（转为/来自图像、文本、JSON）、编辑、注释、签名、添加水印、加密/解密、OCR 等等。"
         },
         "merge": {
           "question": "我可以合并多个 PDF 文件吗？",
@@ -197,13 +197,13 @@
         },
         "edit": {
           "question": "我可以编辑 PDF 中的文本吗？",
-          "answer": "PDFCraft 提供注释和编辑工具，包括高亮、添加文本、形状、图像和签名。如需全文编辑，PDF 编辑器工具提供全面的注释功能。"
+          "answer": "PDF24 提供注释和编辑工具，包括高亮、添加文本、形状、图像和签名。如需全文编辑，PDF 编辑器工具提供全面的注释功能。"
         }
       },
       "technical": {
         "browsers": {
           "question": "支持哪些浏览器？",
-          "answer": "PDFCraft 适用于所有现代浏览器，包括 Chrome、Firefox、Safari 和 Edge。我们建议使用最新版本的浏览器以获得最佳体验。"
+          "answer": "PDF24 适用于所有现代浏览器，包括 Chrome、Firefox、Safari 和 Edge。我们建议使用最新版本的浏览器以获得最佳体验。"
         },
         "sizeLimit": {
           "question": "有文件大小限制吗？",
@@ -214,14 +214,14 @@
           "answer": "由于所有处理都在浏览器中进行，性能取决于您设备的能力。大文件需要更多的内存和处理能力。为了获得最佳结果，请关闭其他浏览器标签页和应用程序。"
         },
         "offline": {
-          "question": "PDFCraft 可以离线工作吗？",
+          "question": "PDF24 可以离线工作吗？",
           "answer": "目前，PDFCraft 需要互联网连接才能加载应用程序。但是，一旦加载，PDF 处理本身在本地进行，不需要连接。"
         }
       },
       "languages": {
         "supported": {
           "question": "支持哪些语言？",
-          "answer": "PDFCraft 提供 9 种语言版本：英语、日语、韩语、西班牙语、法语、德语、中文、葡萄牙语和阿拉伯语（支持从右到左）。"
+          "answer": "PDF24 提供 9 种语言版本：英语、日语、韩语、西班牙语、法语、德语、中文、葡萄牙语和阿拉伯语（支持从右到左）。"
         },
         "change": {
           "question": "如何更改语言？",
@@ -260,7 +260,7 @@
       },
       "free": {
         "title": "永久免费",
-        "description": "PDFCraft 完全免费使用，没有隐藏费用，无需注册，也不限制使用次数。"
+        "description": "PDF24 完全免费使用，没有隐藏费用，无需注册，也不限制使用次数。"
       },
       "openSource": {
         "title": "开源透明",
