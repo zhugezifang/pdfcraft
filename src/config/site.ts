@@ -7,8 +7,8 @@ export const siteConfig = {
   url: 'https://pdfcraft.devtoolcafe.com',
   ogImage: '/images/og-image.png',
   links: {
-    github: 'https://github.com/PDFCraftTool/pdfcraft',
-    twitter: 'https://twitter.com/pdfcraft',
+    github: '#',
+    twitter: '#',
   },
   creator: 'PDFCraft Team',
   keywords: [
