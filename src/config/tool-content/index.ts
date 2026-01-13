@@ -11,6 +11,7 @@ export { toolContentFr } from './fr';
 export { toolContentDe } from './de';
 export { toolContentZh } from './zh';
 export { toolContentPt } from './pt';
+export { toolContentZhTw } from './zh-tw';
 
 import { toolContentEn } from './en';
 import { toolContentJa } from './ja';
@@ -20,6 +21,7 @@ import { toolContentFr } from './fr';
 import { toolContentDe } from './de';
 import { toolContentZh } from './zh';
 import { toolContentPt } from './pt';
+import { toolContentZhTw } from './zh-tw';
 import { ToolContent } from '@/types/tool';
 
 export type Locale = 'en' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'zh' | 'zh-TW' | 'pt';
@@ -27,10 +29,10 @@ export type Locale = 'en' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'zh' | 'zh-TW' | 
 /**
  * Get tool content for a specific locale
  * Falls back to English if translation not found
- * zh-TW falls back to zh (Simplified Chinese) content
+ * zh-TW falls back to zh (Simplified Chinese) if not found, then to English
  */
 export function getToolContent(locale: Locale, toolId: string): ToolContent | undefined {
-  const contentMap: Record<Exclude<Locale, 'zh-TW'>, Record<string, ToolContent>> = {
+  const contentMap: Record<Locale, Record<string, ToolContent>> = {
     en: toolContentEn,
     ja: toolContentJa,
     ko: toolContentKo,
@@ -38,15 +40,21 @@ export function getToolContent(locale: Locale, toolId: string): ToolContent | un
     fr: toolContentFr,
     de: toolContentDe,
     zh: toolContentZh,
-    pt: toolContentPt,
+    'zh-TW': toolContentZhTw,
+    pt: toolContentPt
   };
 
-  // Map zh-TW to zh (use Simplified Chinese content for Traditional Chinese)
-  const effectiveLocale = locale === 'zh-TW' ? 'zh' : locale;
-
-  const localeContent = contentMap[effectiveLocale];
+  const localeContent = contentMap[locale];
   if (localeContent && localeContent[toolId]) {
     return localeContent[toolId];
+  }
+
+  // For zh-TW, fallback to zh (Simplified Chinese) first
+  if (locale === 'zh-TW') {
+    const zhContent = contentMap.zh[toolId];
+    if (zhContent) {
+      return zhContent;
+    }
   }
 
   // Fallback to English
