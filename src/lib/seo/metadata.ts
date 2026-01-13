@@ -168,14 +168,58 @@ export function generateToolMetadata(options: ToolMetadataOptions): Metadata {
 }
 
 /**
+ * Homepage metadata translations
+ */
+const homeMetadataTranslations: Record<Locale, { title: string; description: string }> = {
+  en: {
+    title: `${siteConfig.name} - Free Online PDF Tools`,
+    description: 'Free Online PDF Tools - Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
+  },
+  ja: {
+    title: `${siteConfig.name} - 無料オンラインPDFツール`,
+    description: '無料オンラインPDFツール - マージ、分割、圧縮、変換、PDFファイルをオンラインで編集してサーバーにアップロードしない',
+  },
+  ko: {
+    title: `${siteConfig.name} - 무료 온라인 PDF 도구`,
+    description: '무료 온라인 PDF 도구 - 파일을 서버에 업로드하지 않고 온라인으로 PDF 파일을 병합, 분할, 압축, 변환 및 편집할 수 있습니다.',
+  },
+  es: {
+    title: `${siteConfig.name} - Herramientas PDF en línea`,
+    description: 'Herramientas PDF en línea - Gratis y Privadas',
+  },
+  fr: {
+    title: `${siteConfig.name} - Outils PDF en ligne`,
+    description: 'Outils PDF en ligne - Gratuits et Privés',
+  },
+  de: {
+    title: `${siteConfig.name} - Kostenlose Online-PDF-Tools`,
+    description: 'Kostenlose Online-PDF-Tools - Zusammenführen, teilen, komprimieren, konvertieren und bearbeiten PDF-Dateien online ohne hochladen zu Servern',
+  },
+  zh: {
+    title: `${siteConfig.name} - 免费在线 PDF 工具`,
+    description: '免费在线 PDF 工具 - 合并、分割、压缩、转换和编辑 PDF',
+  },
+  'zh-TW': {
+    title: `${siteConfig.name} - 免費線上 PDF 工具`,
+    description: '免費線上 PDF 工具 - 合併、分割、壓縮、轉換和編輯 PDF 文件，無需上傳到伺服器',
+  },
+  pt: {
+    title: `${siteConfig.name} - Ferramentas PDF Online`,
+    description: 'Ferramentas PDF em línea - Grátis e Privadas',
+  },
+};
+
+/**
  * Generate metadata for the homepage
  */
 export function generateHomeMetadata(locale: Locale): Metadata {
+  const translations = homeMetadataTranslations[locale] || homeMetadataTranslations.en;
+  
   return generateBaseMetadata({
     locale,
     path: '',
-    title: `${siteConfig.name} - Professional PDF Tools`,
-    description: siteConfig.description,
+    title: translations.title,
+    description: translations.description,
     keywords: ['PDF tools', 'merge PDF', 'split PDF', 'compress PDF', 'convert PDF', 'free PDF tools', 'online PDF editor'],
   });
 }
