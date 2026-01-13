@@ -4,7 +4,7 @@
 export const siteConfig = {
   name: 'PDF24 Tools',
   description: 'Free Online PDF Tools - Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
-  url: 'https://pdf24tools.online',
+  url: 'https://www.pdf24tools.online',
   ogImage: '/images/og-image.png',
   links: {
     github: '#',
