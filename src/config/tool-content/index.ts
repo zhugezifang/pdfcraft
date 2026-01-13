@@ -11,7 +11,7 @@ export { toolContentFr } from './fr';
 export { toolContentDe } from './de';
 export { toolContentZh } from './zh';
 export { toolContentPt } from './pt';
-export { toolContentZhTw } from './zh-tw';
+export { toolContentTw } from './tw';
 
 import { toolContentEn } from './en';
 import { toolContentJa } from './ja';
@@ -21,7 +21,7 @@ import { toolContentFr } from './fr';
 import { toolContentDe } from './de';
 import { toolContentZh } from './zh';
 import { toolContentPt } from './pt';
-import { toolContentZhTw } from './zh-tw';
+import { toolContentTw } from './tw';
 import { ToolContent } from '@/types/tool';
 
 export type Locale = 'en' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'zh' | 'zh-TW' | 'pt';
@@ -40,7 +40,7 @@ export function getToolContent(locale: Locale, toolId: string): ToolContent | un
     fr: toolContentFr,
     de: toolContentDe,
     zh: toolContentZh,
-    'zh-TW': toolContentZhTw,
+    'zh-TW': toolContentTw,
     pt: toolContentPt
   };
 

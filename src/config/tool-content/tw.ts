@@ -7,7 +7,7 @@
 
 import type { ToolContent } from '@/types/tool';
 
-export const toolContentZhTw: Record<string, ToolContent> = {
+export const toolContentTw: Record<string, ToolContent> = {
   // ==================== 热门工具 ====================
   'pdf-multi-tool': {
     title: 'PDF多功能工具',
