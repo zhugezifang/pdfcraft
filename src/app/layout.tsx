@@ -23,6 +23,9 @@ export default function RootLayout({
       <head>
         <meta name="color-scheme" content="light dark" />
         <meta name="google-site-verification" content="xCEvi3hJmDfMClCQslBPtzDDcye5QEpSRRJ4T7eAbt8" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4158779929727637"
+        crossorigin="anonymous"></script>
+        <meta name="google-adsense-account" content="ca-pub-4158779929727637"></meta>
         <style dangerouslySetInnerHTML={{ __html: 'html{scrollbar-gutter:stable}' }} />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
