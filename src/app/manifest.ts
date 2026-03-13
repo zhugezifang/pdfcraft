@@ -15,7 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.name,
     short_name: 'PDFCraft',
-    description: siteConfig.description,
+    //description: siteConfig.description,
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
