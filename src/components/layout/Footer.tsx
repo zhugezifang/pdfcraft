@@ -174,6 +174,7 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
             &copy; {currentYear} {t('brand')}. {t('footer.copyright', { year: '' }).replace(/^\d{4}\s*/, '')}
           </p>
           <div className="flex items-center gap-6">
+            <Link href="https://www.pdf24tools.online/zh/" target="_blank"  className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">免费在线 PDF 工具</Link>
             <Link href="https://www.crxsoso.com/" target="_blank"  className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">Crx搜搜</Link>
           </div>
         </div>
