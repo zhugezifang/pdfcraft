@@ -139,7 +139,9 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
         {/* Language Switcher */}
         <div className="py-6 border-t border-[hsl(var(--color-border))]">
 
-          <iframe src="https://www.pdf24tools.online/adsterra.html" style={{ width: '100%'}} className="mb-4"/>
+          <AdsterraAd adId="ecb2cd420ef4bb991c56a3f5061b33e7" />
+
+          <iframe src="https://www.pdf24tools.online/adsterra" style={{ width: '100%'}} className="mb-4"/>
 
           
           <div className="flex items-center gap-3 mb-4">
